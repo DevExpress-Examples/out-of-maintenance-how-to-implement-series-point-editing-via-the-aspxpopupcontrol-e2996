@@ -1,3 +1,11 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [BO.cs](./CS/WebSite/App_Code/BO.cs) (VB: [BO.vb](./VB/WebSite/App_Code/BO.vb))
+* [ClientScripts.js](./CS/WebSite/ClientScripts.js) (VB: [ClientScripts.js](./VB/WebSite/ClientScripts.js))
+* [Default.aspx](./CS/WebSite/Default.aspx) (VB: [Default.aspx.vb](./VB/WebSite/Default.aspx.vb))
+* [Default.aspx.cs](./CS/WebSite/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/WebSite/Default.aspx.vb))
+<!-- default file list end -->
 # How to implement series point editing via the ASPxPopupControl
 
 
