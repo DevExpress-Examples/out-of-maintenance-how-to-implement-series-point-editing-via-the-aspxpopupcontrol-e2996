@@ -7,6 +7,9 @@
 * [Default.aspx.cs](./CS/WebSite/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/WebSite/Default.aspx.vb))
 <!-- default file list end -->
 # How to implement series point editing via the ASPxPopupControl
+<!-- run online -->
+**[[Run Online]](https://codecentral.devexpress.com/e2996/)**
+<!-- run online end -->
 
 
 <p>This example illustrates how to implement series point editing via the ASPxPopupControl. For this, the <a href="http://documentation.devexpress.com/#XtraCharts/DevExpressXtraChartsWebScriptsASPxClientWebChartControl_ObjectSelectedtopic"><u>ASPxClientWebChartControl.ObjectSelected Event</u></a> is handled. In this event handler a series point argument and value are assigned to editors (ASPxTextBox and ASPxTimeEdit in this example) within a popup, and this popup is displayed via the <a href="http://documentation.devexpress.com/#AspNet/DevExpressWebASPxPopupControlScriptsASPxClientPopupControl_Showtopic"><u>ASPxClientPopupControl.Show Method</u></a><u>.</u> When the editing is finished (in the "Ok" button click event handler), modified values are passed to the server side (via the <a href="http://documentation.devexpress.com/#XtraCharts/DevExpressXtraChartsWebScriptsASPxClientWebChartControl_PerformCallbacktopic"><u>ASPxClientWebChartControl.PerformCallback Method</u></a>) to update the underlying datasource to which the WebChartControl is bound.</p><p>Also, please note the way, in which time values in Local format are converted to UTC format and to string format which can be parsed on the server side via the <a href="http://msdn.microsoft.com/en-us/library/9xk1h71t.aspx"><u>Convert.ToDateTime Method</u></a>. For this, the _aspxToUtcTime and _aspxGetInvariantDateTimeString methods are used.</p><p><strong>See also:</strong><br />
